@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novelláim</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #fdf8f2;
+      color: #2c2c2c;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #3b2a1a;
+      color: #f5ede0;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      font-style: italic;
+    }
+
+    main {
+      flex: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      width: 100%;
+    }
+
+    h2.section-title {
+      font-size: 1.6rem;
+      color: #3b2a1a;
+      border-bottom: 2px solid #c8a87a;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .novella-list {
+      list-style: none;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .novella-card {
+      background: #fff;
+      border: 1px solid #e4d5c0;
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .novella-card:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .novella-card h3 {
+      font-size: 1.25rem;
+      color: #2c2c2c;
+    }
+
+    .novella-card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .novella-card a.read-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+      color: #7a4a1e;
+      font-size: 0.95rem;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    .novella-card a.read-link:hover {
+      text-decoration: underline;
+      color: #3b2a1a;
+    }
+
+    .pdf-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    footer {
+      background-color: #3b2a1a;
+      color: #c8a87a;
+      text-align: center;
+      padding: 1.2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Novelláim</h1>
+    <p>Rövid prózai írások – olvasásra várva</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">Novellák</h2>
+
+    <ul class="novella-list">
+
+      <li class="novella-card">
+        <h3>Példa Novella</h3>
+        <p>
+          Ez egy bemutató novella, amely szemlélteti a honlap működését.
+          A valódi novellákat hamarosan feltöltjük – addig is kattintson
+          az alábbi linkre a PDF megtekintéséhez.
+        </p>
+        <a class="read-link" href="novellak/pelda-novella.pdf" target="_blank">
+          <svg class="pdf-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6zm3.5-5.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S7.17 13 8 13s1.5.67 1.5 1.5zM14 19h-1.5v-1h-3v1H8v-5h1.5v3h3v-3H14v5z"/>
+          </svg>
+          Novella olvasása (PDF)
+        </a>
+      </li>
+
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2026 – Minden jog fenntartva.
+  </footer>
+
+</body>
+</html>
